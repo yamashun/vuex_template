@@ -17,10 +17,10 @@ module VuexTemplate
         template "store_configs.js.erb", "app/javascript/packs/store/configs/configs_#{@underscore_name}.js"
 
         copy_file "component.vue", "app/javascript/packs/components/#{@underscore_name}/#{@underscore_name}_index.vue"
-        copy_file "store_state.js", "app/javascript/packs/srore/state/state_#{@underscore_name}.js"
-        copy_file "store_getters.js", "app/javascript/packs/srore/getters/getters_#{@underscore_name}.js"
-        copy_file "store_mutations.js", "app/javascript/packs/srore/mutations/mutations_#{@underscore_name}.js"
-        copy_file "store_actions.js", "app/javascript/packs/srore/actions/actions_#{@underscore_name}.js"
+        copy_file "store_state.js", "app/javascript/packs/store/state/state_#{@underscore_name}.js"
+        copy_file "store_getters.js", "app/javascript/packs/store/getters/getters_#{@underscore_name}.js"
+        copy_file "store_mutations.js", "app/javascript/packs/store/mutations/mutations_#{@underscore_name}.js"
+        copy_file "store_actions.js", "app/javascript/packs/store/actions/actions_#{@underscore_name}.js"
       end
     end
   end
