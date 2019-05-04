@@ -1,0 +1,11 @@
+import Vue from "vue/dist/vue.esm";
+import SearchIndex from "../packs/components/<%= @underscore_name %>/<%= @underscore_name %>_index";
+import store from "../packs/store/<%= @underscore_name %>";
+
+
+new Vue({
+  el: "#script__<%= @kebab_name %>",
+  store,
+  components: { <%= @camelize_name %>Index },
+  template: "<<%= @kebab_name %>-index></<%= @kebab_name %>-index>",
+});
